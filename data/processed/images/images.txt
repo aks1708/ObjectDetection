@@ -1,0 +1,1 @@
+Images go into this folder with each subdirectory representing a split

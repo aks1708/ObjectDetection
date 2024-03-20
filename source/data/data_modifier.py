@@ -12,6 +12,11 @@ def create_image_split_directory(split):
     with open('../data/raw/Image_sets/{}.txt'.format(split)) as split_read:
         split_file = split_read.readlines()
 
+    try:
+        os.mkdir('../data/processed/images/{}'.format(split))
+    except OSError:
+        print(OSError)
+
     for image in split_file:
         shutil.copy('../data/raw/Images/{}.JPEG'.format(image.strip('\n')), '../data/processed/images/{}'.format(split))
 
@@ -52,5 +57,8 @@ def create_label_directory(split):
     :param split: The split to create the labels directory for 
     Returns nothing
     """
+
+    os.mkdir('../data/processed/labels/{}'.format(split))
+
     for filename in os.listdir('../data/processed/images/{}'.format(split)):
         create_label_file(filename, split)

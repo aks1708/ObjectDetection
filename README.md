@@ -14,6 +14,9 @@ Inside the ```data/raw directory```, we want the following directories which can
  - Image_sets
  - Images
 
+Notice in the ```/data``` subdirectories there are txt files. Git cannot push empty directories so these are just there
+as dummy files and are not needed.
+
 In order to get the processed dataset, we need to run ```data_preprocessing.ipynb``` in the ```notebooks``` directory.
 Run this notebook first before any other one.
 

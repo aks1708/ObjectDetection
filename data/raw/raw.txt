@@ -1,0 +1,5 @@
+Raw data goes into this folder
+We need the following extracted from the ObjectNet3D Dataset:
+ - Annotations
+ - Image_sets
+ - Images
