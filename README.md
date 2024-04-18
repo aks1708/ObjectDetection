@@ -27,3 +27,16 @@ We can get a feel for the problem using the ```data_exploration.ipynb``` noteboo
 ```source``` is a module that contains helper functions to process the data and create label txt files to use the YOLO model
 
 ```reports``` contains graphs depicting results during fine tuning.
+
+# Using the API 
+
+In the command line, cd to the directory ```Project3``` and type the following command:
+
+```
+uvicorn image_api:app
+```
+You will get a link to use the API. Copy this to your browser and append ```/docs``` to the end of the link.
+
+Go onto the predict POST method and click 'Try it Out'
+
+NOTE: When uploading an image, ensure this is inside the ```Project3``` directory

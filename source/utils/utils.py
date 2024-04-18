@@ -64,7 +64,7 @@ def get_class_index(class_name):
     """
     line_number = 0
 
-    with open('../data/raw/Image_sets/classes.txt', 'r') as file:
+    with open('../classes.txt', 'r') as file:
         for line in file.readlines():
             line_number += 1
             if class_name in line:
